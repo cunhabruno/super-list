@@ -1,0 +1,7 @@
+#itemdone {
+    text-decoration: line-through;
+}
+
+.far .fa-trash-alt{
+    size: 9px;
+}
