@@ -45,6 +45,7 @@ class ListItem extends React.Component<ListItemProps, StateType> {
                         />
                     }
                     id={this.state.active ? "itemdone" : "pending"}
+                    test-data="list-item"
                     label={name}
                 />
                 <IconButton aria-label="Delete" onClick={onDelete}>

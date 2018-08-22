@@ -32,7 +32,7 @@ class SearchBox extends React.Component {
         return (
             <div>
                 <TextField
-                    id="with-placeholder"
+                    id="search-input"
                     label="Find Item"
                     placeholder="Find or Add"
                     type="search"
