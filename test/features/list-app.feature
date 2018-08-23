@@ -1,7 +1,10 @@
 Feature: List app
 
-  Scenario: Open page
-    Given I go to the following page "http://localhost:3000/"
+  Background: clean up
+    Given I clear "search" input on "List app main page"
+
+  #Scenario: Open page
+    #Given I go to the following page "http://localhost:3000/"
 
   Scenario Outline: add item to list - enter key
     When I fill in "search" input on "List app main page" with the value <ITEM>
@@ -14,7 +17,9 @@ Feature: List app
       | "Ovos"   |
 
   Scenario Outline: add item to list - add button
+    Given I can see "Add button" enabled on "List app main page"
     When I fill in "search" input on "List app main page" with the value <ITEM>
+    And I can see "Add button" enabled on "List app main page"
     And I click on "Add button" on "List App main page"
     Then I can see "List Item" on "List app main page" with the text <ITEM>
     Examples:

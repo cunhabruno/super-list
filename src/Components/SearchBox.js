@@ -52,6 +52,7 @@ class SearchBox extends React.Component {
                         id="add-button"
                         variant="fab"
                         mini color="primary"
+                        disabled={!value}
                         onClick={onClickAddButton}>
                         <i className="fas fa-plus"/>
                     </Button>
