@@ -12,7 +12,7 @@ module.exports = {
     ],
 
     stepDefinitions : [
-        'test/features/step-definitions'
+        'test/features/steps'
     ],
 
     //tags : '@positive or @negative',

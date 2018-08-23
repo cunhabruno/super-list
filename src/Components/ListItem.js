@@ -49,7 +49,7 @@ class ListItem extends React.Component<ListItemProps, StateType> {
                     label={name}
                 />
                 <IconButton aria-label="Delete" onClick={onDelete}>
-                    <i className="far fa-trash-alt fa-xs"/>
+                    <i className="far fa-trash-alt fa-xs" test-data="trash-button"/>
                 </IconButton>
             </div>
         )
